@@ -14,7 +14,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "C82DB1F02C5ADC640014923E"
+               BlueprintIdentifier = "C82DB2032C5ADCFA0014923E"
                BuildableName = "WeSplit.app"
                BlueprintName = "WeSplit"
                ReferencedContainer = "container:100DaysOfSwiftUI.xcodeproj">
@@ -43,7 +43,7 @@
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "C82DB1F02C5ADC640014923E"
+            BlueprintIdentifier = "C82DB2032C5ADCFA0014923E"
             BuildableName = "WeSplit.app"
             BlueprintName = "WeSplit"
             ReferencedContainer = "container:100DaysOfSwiftUI.xcodeproj">
@@ -60,7 +60,7 @@
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "C82DB1F02C5ADC640014923E"
+            BlueprintIdentifier = "C82DB2032C5ADCFA0014923E"
             BuildableName = "WeSplit.app"
             BlueprintName = "WeSplit"
             ReferencedContainer = "container:100DaysOfSwiftUI.xcodeproj">
