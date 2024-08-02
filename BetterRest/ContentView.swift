@@ -60,7 +60,7 @@ struct ContentView: View {
                 
                 Section("Daily coffee intake") {
                     Picker("Number of cups: ", selection: $coffeeAmount) {
-                        ForEach(1..<20) {
+                        ForEach(1..<21) {
                             Text("\($0)")
                         }
                     }
