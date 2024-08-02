@@ -102,8 +102,8 @@
 				C82DB2052C5ADCFA0014923E /* WeSplit */,
 				C82DB2172C5C37650014923E /* VolumeConverter */,
 				C82DB2292C5C42020014923E /* GuessTheFlag */,
-				C82DB2602C5D46E10014923E /* RockPaperScissors */,
 				C82DB23B2C5CF6A40014923E /* ViewsAndModifiers */,
+				C82DB2602C5D46E10014923E /* RockPaperScissors */,
 				C82DB1DC2C5ADC1B0014923E /* Products */,
 			);
 			sourceTree = "<group>";

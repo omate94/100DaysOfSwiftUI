@@ -53,13 +53,13 @@ struct ContentView: View {
                     .background(.regularMaterial)
                 
                 
-                Text("Your goal is to")
+                Text("Your have to")
                 
                 Text(shouldWin ? "win" : "lose")
                     .font(.system(size: 40).bold())
                     .foregroundStyle(shouldWin ? .green : .red)
                 
-                Text("this game")
+                Text("in this turn")
                 
                 Spacer()
                 
