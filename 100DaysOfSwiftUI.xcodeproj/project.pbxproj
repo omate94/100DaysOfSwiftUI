@@ -41,6 +41,10 @@
 		C82DB2A22C615CA30014923E /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C82DB2A12C615CA30014923E /* ContentView.swift */; };
 		C82DB2A42C615CA60014923E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C82DB2A32C615CA60014923E /* Assets.xcassets */; };
 		C82DB2A72C615CA60014923E /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C82DB2A62C615CA60014923E /* Preview Assets.xcassets */; };
+		C8964C7A2C626A2500024577 /* MultiplicationTablesApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8964C792C626A2500024577 /* MultiplicationTablesApp.swift */; };
+		C8964C7C2C626A2500024577 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8964C7B2C626A2500024577 /* ContentView.swift */; };
+		C8964C7E2C626A2A00024577 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C8964C7D2C626A2900024577 /* Assets.xcassets */; };
+		C8964C812C626A2A00024577 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C8964C802C626A2A00024577 /* Preview Assets.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -86,6 +90,11 @@
 		C82DB2A12C615CA30014923E /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		C82DB2A32C615CA60014923E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C82DB2A62C615CA60014923E /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		C8964C772C626A2500024577 /* MultiplicationTables.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MultiplicationTables.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		C8964C792C626A2500024577 /* MultiplicationTablesApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MultiplicationTablesApp.swift; sourceTree = "<group>"; };
+		C8964C7B2C626A2500024577 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		C8964C7D2C626A2900024577 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		C8964C802C626A2A00024577 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -145,6 +154,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		C8964C742C626A2500024577 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -159,6 +175,7 @@
 				C82DB2722C5D8B090014923E /* BetterRest */,
 				C82DB28A2C60E66E0014923E /* WordScramble */,
 				C82DB29E2C615CA30014923E /* Animations */,
+				C8964C782C626A2500024577 /* MultiplicationTables */,
 				C82DB1DC2C5ADC1B0014923E /* Products */,
 			);
 			sourceTree = "<group>";
@@ -174,6 +191,7 @@
 				C82DB2712C5D8B080014923E /* BetterRest.app */,
 				C82DB2892C60E66E0014923E /* WordScramble.app */,
 				C82DB29D2C615CA20014923E /* Animations.app */,
+				C8964C772C626A2500024577 /* MultiplicationTables.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -332,6 +350,25 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
+		C8964C782C626A2500024577 /* MultiplicationTables */ = {
+			isa = PBXGroup;
+			children = (
+				C8964C792C626A2500024577 /* MultiplicationTablesApp.swift */,
+				C8964C7B2C626A2500024577 /* ContentView.swift */,
+				C8964C7D2C626A2900024577 /* Assets.xcassets */,
+				C8964C7F2C626A2A00024577 /* Preview Content */,
+			);
+			path = MultiplicationTables;
+			sourceTree = "<group>";
+		};
+		C8964C7F2C626A2A00024577 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				C8964C802C626A2A00024577 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -471,6 +508,23 @@
 			productReference = C82DB29D2C615CA20014923E /* Animations.app */;
 			productType = "com.apple.product-type.application";
 		};
+		C8964C762C626A2500024577 /* MultiplicationTables */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C8964C842C626A2A00024577 /* Build configuration list for PBXNativeTarget "MultiplicationTables" */;
+			buildPhases = (
+				C8964C732C626A2500024577 /* Sources */,
+				C8964C742C626A2500024577 /* Frameworks */,
+				C8964C752C626A2500024577 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MultiplicationTables;
+			productName = MultiplicationTables;
+			productReference = C8964C772C626A2500024577 /* MultiplicationTables.app */;
+			productType = "com.apple.product-type.application";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -505,6 +559,9 @@
 					C82DB29C2C615CA20014923E = {
 						CreatedOnToolsVersion = 15.2;
 					};
+					C8964C762C626A2500024577 = {
+						CreatedOnToolsVersion = 15.2;
+					};
 				};
 			};
 			buildConfigurationList = C82DB1D62C5ADC1B0014923E /* Build configuration list for PBXProject "100DaysOfSwiftUI" */;
@@ -528,6 +585,7 @@
 				C82DB2702C5D8B080014923E /* BetterRest */,
 				C82DB2882C60E66E0014923E /* WordScramble */,
 				C82DB29C2C615CA20014923E /* Animations */,
+				C8964C762C626A2500024577 /* MultiplicationTables */,
 			);
 		};
 /* End PBXProject section */
@@ -606,6 +664,15 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		C8964C752C626A2500024577 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C8964C812C626A2A00024577 /* Preview Assets.xcassets in Resources */,
+				C8964C7E2C626A2A00024577 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -679,6 +746,15 @@
 			files = (
 				C82DB2A22C615CA30014923E /* ContentView.swift in Sources */,
 				C82DB2A02C615CA30014923E /* AnimationsApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C8964C732C626A2500024577 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C8964C7C2C626A2500024577 /* ContentView.swift in Sources */,
+				C8964C7A2C626A2500024577 /* MultiplicationTablesApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1307,6 +1383,69 @@
 			};
 			name = Release;
 		};
+		C8964C822C626A2A00024577 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"MultiplicationTables/Preview Content\"";
+				DEVELOPMENT_TEAM = NUA29C2B66;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.olahmate.MultiplicationTables;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		C8964C832C626A2A00024577 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"MultiplicationTables/Preview Content\"";
+				DEVELOPMENT_TEAM = NUA29C2B66;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.olahmate.MultiplicationTables;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -1387,6 +1526,15 @@
 			buildConfigurations = (
 				C82DB2A82C615CA60014923E /* Debug */,
 				C82DB2A92C615CA60014923E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C8964C842C626A2A00024577 /* Build configuration list for PBXNativeTarget "MultiplicationTables" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C8964C822C626A2A00024577 /* Debug */,
+				C8964C832C626A2A00024577 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
