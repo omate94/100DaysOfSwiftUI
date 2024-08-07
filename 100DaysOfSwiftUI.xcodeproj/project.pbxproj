@@ -45,6 +45,13 @@
 		C8964C7C2C626A2500024577 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8964C7B2C626A2500024577 /* ContentView.swift */; };
 		C8964C7E2C626A2A00024577 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C8964C7D2C626A2900024577 /* Assets.xcassets */; };
 		C8964C812C626A2A00024577 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C8964C802C626A2A00024577 /* Preview Assets.xcassets */; };
+		C8964C8E2C64127D00024577 /* iExpenseApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8964C8D2C64127D00024577 /* iExpenseApp.swift */; };
+		C8964C902C64127D00024577 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8964C8F2C64127D00024577 /* ContentView.swift */; };
+		C8964C922C64128000024577 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C8964C912C64128000024577 /* Assets.xcassets */; };
+		C8964C952C64128000024577 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C8964C942C64128000024577 /* Preview Assets.xcassets */; };
+		C8964C9A2C641CA900024577 /* ExpenseItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8964C992C641CA900024577 /* ExpenseItem.swift */; };
+		C8964C9C2C641CDA00024577 /* Expenses.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8964C9B2C641CDA00024577 /* Expenses.swift */; };
+		C8964C9E2C641FD000024577 /* AddView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8964C9D2C641FD000024577 /* AddView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -95,6 +102,14 @@
 		C8964C7B2C626A2500024577 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		C8964C7D2C626A2900024577 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C8964C802C626A2A00024577 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		C8964C8B2C64127D00024577 /* iExpense.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iExpense.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		C8964C8D2C64127D00024577 /* iExpenseApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iExpenseApp.swift; sourceTree = "<group>"; };
+		C8964C8F2C64127D00024577 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		C8964C912C64128000024577 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		C8964C942C64128000024577 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		C8964C992C641CA900024577 /* ExpenseItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExpenseItem.swift; sourceTree = "<group>"; };
+		C8964C9B2C641CDA00024577 /* Expenses.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Expenses.swift; sourceTree = "<group>"; };
+		C8964C9D2C641FD000024577 /* AddView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -161,6 +176,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		C8964C882C64127D00024577 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -176,6 +198,7 @@
 				C82DB28A2C60E66E0014923E /* WordScramble */,
 				C82DB29E2C615CA30014923E /* Animations */,
 				C8964C782C626A2500024577 /* MultiplicationTables */,
+				C8964C8C2C64127D00024577 /* iExpense */,
 				C82DB1DC2C5ADC1B0014923E /* Products */,
 			);
 			sourceTree = "<group>";
@@ -192,6 +215,7 @@
 				C82DB2892C60E66E0014923E /* WordScramble.app */,
 				C82DB29D2C615CA20014923E /* Animations.app */,
 				C8964C772C626A2500024577 /* MultiplicationTables.app */,
+				C8964C8B2C64127D00024577 /* iExpense.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -369,6 +393,28 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
+		C8964C8C2C64127D00024577 /* iExpense */ = {
+			isa = PBXGroup;
+			children = (
+				C8964C8D2C64127D00024577 /* iExpenseApp.swift */,
+				C8964C9D2C641FD000024577 /* AddView.swift */,
+				C8964C8F2C64127D00024577 /* ContentView.swift */,
+				C8964C912C64128000024577 /* Assets.xcassets */,
+				C8964C932C64128000024577 /* Preview Content */,
+				C8964C992C641CA900024577 /* ExpenseItem.swift */,
+				C8964C9B2C641CDA00024577 /* Expenses.swift */,
+			);
+			path = iExpense;
+			sourceTree = "<group>";
+		};
+		C8964C932C64128000024577 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				C8964C942C64128000024577 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -525,6 +571,23 @@
 			productReference = C8964C772C626A2500024577 /* MultiplicationTables.app */;
 			productType = "com.apple.product-type.application";
 		};
+		C8964C8A2C64127D00024577 /* iExpense */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C8964C982C64128000024577 /* Build configuration list for PBXNativeTarget "iExpense" */;
+			buildPhases = (
+				C8964C872C64127D00024577 /* Sources */,
+				C8964C882C64127D00024577 /* Frameworks */,
+				C8964C892C64127D00024577 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = iExpense;
+			productName = iExpense;
+			productReference = C8964C8B2C64127D00024577 /* iExpense.app */;
+			productType = "com.apple.product-type.application";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -562,6 +625,9 @@
 					C8964C762C626A2500024577 = {
 						CreatedOnToolsVersion = 15.2;
 					};
+					C8964C8A2C64127D00024577 = {
+						CreatedOnToolsVersion = 15.2;
+					};
 				};
 			};
 			buildConfigurationList = C82DB1D62C5ADC1B0014923E /* Build configuration list for PBXProject "100DaysOfSwiftUI" */;
@@ -586,6 +652,7 @@
 				C82DB2882C60E66E0014923E /* WordScramble */,
 				C82DB29C2C615CA20014923E /* Animations */,
 				C8964C762C626A2500024577 /* MultiplicationTables */,
+				C8964C8A2C64127D00024577 /* iExpense */,
 			);
 		};
 /* End PBXProject section */
@@ -673,6 +740,15 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		C8964C892C64127D00024577 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C8964C952C64128000024577 /* Preview Assets.xcassets in Resources */,
+				C8964C922C64128000024577 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -755,6 +831,18 @@
 			files = (
 				C8964C7C2C626A2500024577 /* ContentView.swift in Sources */,
 				C8964C7A2C626A2500024577 /* MultiplicationTablesApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C8964C872C64127D00024577 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C8964C9C2C641CDA00024577 /* Expenses.swift in Sources */,
+				C8964C902C64127D00024577 /* ContentView.swift in Sources */,
+				C8964C9E2C641FD000024577 /* AddView.swift in Sources */,
+				C8964C9A2C641CA900024577 /* ExpenseItem.swift in Sources */,
+				C8964C8E2C64127D00024577 /* iExpenseApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1446,6 +1534,69 @@
 			};
 			name = Release;
 		};
+		C8964C962C64128000024577 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"iExpense/Preview Content\"";
+				DEVELOPMENT_TEAM = NUA29C2B66;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.olahmate.iExpense;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		C8964C972C64128000024577 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"iExpense/Preview Content\"";
+				DEVELOPMENT_TEAM = NUA29C2B66;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.olahmate.iExpense;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -1535,6 +1686,15 @@
 			buildConfigurations = (
 				C8964C822C626A2A00024577 /* Debug */,
 				C8964C832C626A2A00024577 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C8964C982C64128000024577 /* Build configuration list for PBXNativeTarget "iExpense" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C8964C962C64128000024577 /* Debug */,
+				C8964C972C64128000024577 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
