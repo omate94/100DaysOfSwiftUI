@@ -48,6 +48,14 @@
 		C849BC1A2C692A1500B2641E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C849BC192C692A1500B2641E /* Assets.xcassets */; };
 		C849BC1D2C692A1500B2641E /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C849BC1C2C692A1500B2641E /* Preview Assets.xcassets */; };
 		C849BC222C695C6300B2641E /* PathStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = C849BC212C695C6300B2641E /* PathStore.swift */; };
+		C849BC2A2C6AA74900B2641E /* HabitTrackerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C849BC292C6AA74900B2641E /* HabitTrackerApp.swift */; };
+		C849BC2C2C6AA74A00B2641E /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C849BC2B2C6AA74A00B2641E /* ContentView.swift */; };
+		C849BC2E2C6AA74D00B2641E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C849BC2D2C6AA74D00B2641E /* Assets.xcassets */; };
+		C849BC312C6AA74D00B2641E /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C849BC302C6AA74D00B2641E /* Preview Assets.xcassets */; };
+		C849BC362C6AA8AA00B2641E /* Habits.swift in Sources */ = {isa = PBXBuildFile; fileRef = C849BC352C6AA8AA00B2641E /* Habits.swift */; };
+		C849BC382C6AA8C100B2641E /* HabitItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = C849BC372C6AA8C100B2641E /* HabitItem.swift */; };
+		C849BC3A2C6AAD6500B2641E /* AddView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C849BC392C6AAD6500B2641E /* AddView.swift */; };
+		C849BC3E2C6AB45800B2641E /* DetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C849BC3D2C6AB45800B2641E /* DetailsView.swift */; };
 		C8964C7A2C626A2500024577 /* MultiplicationTablesApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8964C792C626A2500024577 /* MultiplicationTablesApp.swift */; };
 		C8964C7C2C626A2500024577 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8964C7B2C626A2500024577 /* ContentView.swift */; };
 		C8964C7E2C626A2A00024577 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C8964C7D2C626A2900024577 /* Assets.xcassets */; };
@@ -127,6 +135,15 @@
 		C849BC192C692A1500B2641E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C849BC1C2C692A1500B2641E /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		C849BC212C695C6300B2641E /* PathStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PathStore.swift; sourceTree = "<group>"; };
+		C849BC272C6AA74900B2641E /* HabitTracker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HabitTracker.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		C849BC292C6AA74900B2641E /* HabitTrackerApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HabitTrackerApp.swift; sourceTree = "<group>"; };
+		C849BC2B2C6AA74A00B2641E /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ContentView.swift; path = "../New Group/ContentView.swift"; sourceTree = "<group>"; };
+		C849BC2D2C6AA74D00B2641E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		C849BC302C6AA74D00B2641E /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		C849BC352C6AA8AA00B2641E /* Habits.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Habits.swift; sourceTree = "<group>"; };
+		C849BC372C6AA8C100B2641E /* HabitItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HabitItem.swift; sourceTree = "<group>"; };
+		C849BC392C6AAD6500B2641E /* AddView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddView.swift; sourceTree = "<group>"; };
+		C849BC3D2C6AB45800B2641E /* DetailsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsView.swift; sourceTree = "<group>"; };
 		C8964C772C626A2500024577 /* MultiplicationTables.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MultiplicationTables.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C8964C792C626A2500024577 /* MultiplicationTablesApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MultiplicationTablesApp.swift; sourceTree = "<group>"; };
 		C8964C7B2C626A2500024577 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -222,6 +239,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		C849BC242C6AA74900B2641E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		C8964C742C626A2500024577 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -261,6 +285,7 @@
 				C8964C8C2C64127D00024577 /* iExpense */,
 				C8964CA42C65641700024577 /* Moonshot */,
 				C849BC142C692A1300B2641E /* Navigation */,
+				C849BC282C6AA74900B2641E /* HabitTracker */,
 				C82DB1DC2C5ADC1B0014923E /* Products */,
 			);
 			sourceTree = "<group>";
@@ -280,6 +305,7 @@
 				C8964C8B2C64127D00024577 /* iExpense.app */,
 				C8964CA32C65641700024577 /* Moonshot.app */,
 				C849BC132C692A1200B2641E /* Navigation.app */,
+				C849BC272C6AA74900B2641E /* HabitTracker.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -456,6 +482,45 @@
 				C849BC1C2C692A1500B2641E /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		C849BC282C6AA74900B2641E /* HabitTracker */ = {
+			isa = PBXGroup;
+			children = (
+				C849BC3C2C6AB42F00B2641E /* Models */,
+				C849BC3B2C6AB42100B2641E /* View */,
+				C849BC292C6AA74900B2641E /* HabitTrackerApp.swift */,
+				C849BC2D2C6AA74D00B2641E /* Assets.xcassets */,
+				C849BC2F2C6AA74D00B2641E /* Preview Content */,
+			);
+			path = HabitTracker;
+			sourceTree = "<group>";
+		};
+		C849BC2F2C6AA74D00B2641E /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				C849BC302C6AA74D00B2641E /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		C849BC3B2C6AB42100B2641E /* View */ = {
+			isa = PBXGroup;
+			children = (
+				C849BC392C6AAD6500B2641E /* AddView.swift */,
+				C849BC2B2C6AA74A00B2641E /* ContentView.swift */,
+				C849BC3D2C6AB45800B2641E /* DetailsView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		C849BC3C2C6AB42F00B2641E /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				C849BC352C6AA8AA00B2641E /* Habits.swift */,
+				C849BC372C6AA8C100B2641E /* HabitItem.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 		C8964C782C626A2500024577 /* MultiplicationTables */ = {
@@ -711,6 +776,23 @@
 			productReference = C849BC132C692A1200B2641E /* Navigation.app */;
 			productType = "com.apple.product-type.application";
 		};
+		C849BC262C6AA74900B2641E /* HabitTracker */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C849BC342C6AA74D00B2641E /* Build configuration list for PBXNativeTarget "HabitTracker" */;
+			buildPhases = (
+				C849BC232C6AA74900B2641E /* Sources */,
+				C849BC242C6AA74900B2641E /* Frameworks */,
+				C849BC252C6AA74900B2641E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = HabitTracker;
+			productName = HabitTracker;
+			productReference = C849BC272C6AA74900B2641E /* HabitTracker.app */;
+			productType = "com.apple.product-type.application";
+		};
 		C8964C762C626A2500024577 /* MultiplicationTables */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = C8964C842C626A2A00024577 /* Build configuration list for PBXNativeTarget "MultiplicationTables" */;
@@ -799,6 +881,9 @@
 					C849BC122C692A1200B2641E = {
 						CreatedOnToolsVersion = 15.2;
 					};
+					C849BC262C6AA74900B2641E = {
+						CreatedOnToolsVersion = 15.2;
+					};
 					C8964C762C626A2500024577 = {
 						CreatedOnToolsVersion = 15.2;
 					};
@@ -835,6 +920,7 @@
 				C8964C8A2C64127D00024577 /* iExpense */,
 				C8964CA22C65641700024577 /* Moonshot */,
 				C849BC122C692A1200B2641E /* Navigation */,
+				C849BC262C6AA74900B2641E /* HabitTracker */,
 			);
 		};
 /* End PBXProject section */
@@ -919,6 +1005,15 @@
 			files = (
 				C849BC1D2C692A1500B2641E /* Preview Assets.xcassets in Resources */,
 				C849BC1A2C692A1500B2641E /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C849BC252C6AA74900B2641E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C849BC312C6AA74D00B2641E /* Preview Assets.xcassets in Resources */,
+				C849BC2E2C6AA74D00B2641E /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1034,6 +1129,19 @@
 				C849BC222C695C6300B2641E /* PathStore.swift in Sources */,
 				C849BC182C692A1300B2641E /* ContentView.swift in Sources */,
 				C849BC162C692A1300B2641E /* NavigationApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C849BC232C6AA74900B2641E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C849BC2C2C6AA74A00B2641E /* ContentView.swift in Sources */,
+				C849BC382C6AA8C100B2641E /* HabitItem.swift in Sources */,
+				C849BC3A2C6AAD6500B2641E /* AddView.swift in Sources */,
+				C849BC2A2C6AA74900B2641E /* HabitTrackerApp.swift in Sources */,
+				C849BC362C6AA8AA00B2641E /* Habits.swift in Sources */,
+				C849BC3E2C6AB45800B2641E /* DetailsView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1766,6 +1874,69 @@
 			};
 			name = Release;
 		};
+		C849BC322C6AA74D00B2641E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"HabitTracker/Preview Content\"";
+				DEVELOPMENT_TEAM = NUA29C2B66;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.olahmate.HabitTracker;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		C849BC332C6AA74D00B2641E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"HabitTracker/Preview Content\"";
+				DEVELOPMENT_TEAM = NUA29C2B66;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.olahmate.HabitTracker;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
 		C8964C822C626A2A00024577 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -2044,6 +2215,15 @@
 			buildConfigurations = (
 				C849BC1F2C692A1500B2641E /* Debug */,
 				C849BC202C692A1500B2641E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C849BC342C6AA74D00B2641E /* Build configuration list for PBXNativeTarget "HabitTracker" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C849BC322C6AA74D00B2641E /* Debug */,
+				C849BC332C6AA74D00B2641E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
