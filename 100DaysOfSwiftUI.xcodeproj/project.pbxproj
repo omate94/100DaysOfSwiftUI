@@ -43,6 +43,11 @@
 		C82DB2A72C615CA60014923E /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C82DB2A62C615CA60014923E /* Preview Assets.xcassets */; };
 		C849BBF92C68F99500B2641E /* GridLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = C849BBF82C68F99500B2641E /* GridLayout.swift */; };
 		C849BBFB2C68FF4300B2641E /* ListLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = C849BBFA2C68FF4300B2641E /* ListLayout.swift */; };
+		C849BC162C692A1300B2641E /* NavigationApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C849BC152C692A1300B2641E /* NavigationApp.swift */; };
+		C849BC182C692A1300B2641E /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C849BC172C692A1300B2641E /* ContentView.swift */; };
+		C849BC1A2C692A1500B2641E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C849BC192C692A1500B2641E /* Assets.xcassets */; };
+		C849BC1D2C692A1500B2641E /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C849BC1C2C692A1500B2641E /* Preview Assets.xcassets */; };
+		C849BC222C695C6300B2641E /* PathStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = C849BC212C695C6300B2641E /* PathStore.swift */; };
 		C8964C7A2C626A2500024577 /* MultiplicationTablesApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8964C792C626A2500024577 /* MultiplicationTablesApp.swift */; };
 		C8964C7C2C626A2500024577 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8964C7B2C626A2500024577 /* ContentView.swift */; };
 		C8964C7E2C626A2A00024577 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C8964C7D2C626A2900024577 /* Assets.xcassets */; };
@@ -116,6 +121,12 @@
 		C82DB2A62C615CA60014923E /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		C849BBF82C68F99500B2641E /* GridLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GridLayout.swift; sourceTree = "<group>"; };
 		C849BBFA2C68FF4300B2641E /* ListLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListLayout.swift; sourceTree = "<group>"; };
+		C849BC132C692A1200B2641E /* Navigation.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Navigation.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		C849BC152C692A1300B2641E /* NavigationApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationApp.swift; sourceTree = "<group>"; };
+		C849BC172C692A1300B2641E /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		C849BC192C692A1500B2641E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		C849BC1C2C692A1500B2641E /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		C849BC212C695C6300B2641E /* PathStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PathStore.swift; sourceTree = "<group>"; };
 		C8964C772C626A2500024577 /* MultiplicationTables.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MultiplicationTables.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C8964C792C626A2500024577 /* MultiplicationTablesApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MultiplicationTablesApp.swift; sourceTree = "<group>"; };
 		C8964C7B2C626A2500024577 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -204,6 +215,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		C849BC102C692A1200B2641E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		C8964C742C626A2500024577 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -242,6 +260,7 @@
 				C8964C782C626A2500024577 /* MultiplicationTables */,
 				C8964C8C2C64127D00024577 /* iExpense */,
 				C8964CA42C65641700024577 /* Moonshot */,
+				C849BC142C692A1300B2641E /* Navigation */,
 				C82DB1DC2C5ADC1B0014923E /* Products */,
 			);
 			sourceTree = "<group>";
@@ -260,6 +279,7 @@
 				C8964C772C626A2500024577 /* MultiplicationTables.app */,
 				C8964C8B2C64127D00024577 /* iExpense.app */,
 				C8964CA32C65641700024577 /* Moonshot.app */,
+				C849BC132C692A1200B2641E /* Navigation.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -414,6 +434,26 @@
 			isa = PBXGroup;
 			children = (
 				C82DB2A62C615CA60014923E /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		C849BC142C692A1300B2641E /* Navigation */ = {
+			isa = PBXGroup;
+			children = (
+				C849BC152C692A1300B2641E /* NavigationApp.swift */,
+				C849BC172C692A1300B2641E /* ContentView.swift */,
+				C849BC192C692A1500B2641E /* Assets.xcassets */,
+				C849BC1B2C692A1500B2641E /* Preview Content */,
+				C849BC212C695C6300B2641E /* PathStore.swift */,
+			);
+			path = Navigation;
+			sourceTree = "<group>";
+		};
+		C849BC1B2C692A1500B2641E /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				C849BC1C2C692A1500B2641E /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
 			sourceTree = "<group>";
@@ -654,6 +694,23 @@
 			productReference = C82DB29D2C615CA20014923E /* Animations.app */;
 			productType = "com.apple.product-type.application";
 		};
+		C849BC122C692A1200B2641E /* Navigation */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C849BC1E2C692A1500B2641E /* Build configuration list for PBXNativeTarget "Navigation" */;
+			buildPhases = (
+				C849BC0F2C692A1200B2641E /* Sources */,
+				C849BC102C692A1200B2641E /* Frameworks */,
+				C849BC112C692A1200B2641E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Navigation;
+			productName = Navigation;
+			productReference = C849BC132C692A1200B2641E /* Navigation.app */;
+			productType = "com.apple.product-type.application";
+		};
 		C8964C762C626A2500024577 /* MultiplicationTables */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = C8964C842C626A2A00024577 /* Build configuration list for PBXNativeTarget "MultiplicationTables" */;
@@ -739,6 +796,9 @@
 					C82DB29C2C615CA20014923E = {
 						CreatedOnToolsVersion = 15.2;
 					};
+					C849BC122C692A1200B2641E = {
+						CreatedOnToolsVersion = 15.2;
+					};
 					C8964C762C626A2500024577 = {
 						CreatedOnToolsVersion = 15.2;
 					};
@@ -774,6 +834,7 @@
 				C8964C762C626A2500024577 /* MultiplicationTables */,
 				C8964C8A2C64127D00024577 /* iExpense */,
 				C8964CA22C65641700024577 /* Moonshot */,
+				C849BC122C692A1200B2641E /* Navigation */,
 			);
 		};
 /* End PBXProject section */
@@ -849,6 +910,15 @@
 			files = (
 				C82DB2A72C615CA60014923E /* Preview Assets.xcassets in Resources */,
 				C82DB2A42C615CA60014923E /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C849BC112C692A1200B2641E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C849BC1D2C692A1500B2641E /* Preview Assets.xcassets in Resources */,
+				C849BC1A2C692A1500B2641E /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -954,6 +1024,16 @@
 			files = (
 				C82DB2A22C615CA30014923E /* ContentView.swift in Sources */,
 				C82DB2A02C615CA30014923E /* AnimationsApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C849BC0F2C692A1200B2641E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C849BC222C695C6300B2641E /* PathStore.swift in Sources */,
+				C849BC182C692A1300B2641E /* ContentView.swift in Sources */,
+				C849BC162C692A1300B2641E /* NavigationApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1623,6 +1703,69 @@
 			};
 			name = Release;
 		};
+		C849BC1F2C692A1500B2641E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Navigation/Preview Content\"";
+				DEVELOPMENT_TEAM = NUA29C2B66;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.olahmate.Navigation;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		C849BC202C692A1500B2641E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Navigation/Preview Content\"";
+				DEVELOPMENT_TEAM = NUA29C2B66;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.olahmate.Navigation;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
 		C8964C822C626A2A00024577 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -1892,6 +2035,15 @@
 			buildConfigurations = (
 				C82DB2A82C615CA60014923E /* Debug */,
 				C82DB2A92C615CA60014923E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C849BC1E2C692A1500B2641E /* Build configuration list for PBXNativeTarget "Navigation" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C849BC1F2C692A1500B2641E /* Debug */,
+				C849BC202C692A1500B2641E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
