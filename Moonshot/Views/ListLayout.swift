@@ -14,9 +14,10 @@ struct ListLayout: View {
     var body: some View {
         List {
             ForEach(missions) { mission in
-                NavigationLink {
-                    MissionView(mission: mission, astronauts: astronauts)
-                } label: {
+//                NavigationLink {
+//                    MissionView(mission: mission, astronauts: astronauts)
+//                } label: {
+                NavigationLink(value: mission) {
                     HStack {
                         Image(mission.image)
                             .resizable()
@@ -44,6 +45,9 @@ struct ListLayout: View {
         }
         .listStyle(.plain)
         .background(.darkBackground)
+        .navigationDestination(for: Mission.self) { mission in
+            MissionView(mission: mission, astronauts: astronauts)
+        }
     }
 }
 

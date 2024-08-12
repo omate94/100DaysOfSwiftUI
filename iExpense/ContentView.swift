@@ -10,11 +10,12 @@ import SwiftUI
 struct ContentView: View {
     @State private var expenses = Expenses()
     @State private var showingAddExpense = false
+    @State private var path = [String]()
     
     private let localCurrencyCode = Locale.current.currency?.identifier
     
     var body: some View {
-        NavigationStack {
+        NavigationStack(path: $path) {
             List {
                 let personalItems = expenses.items.filter { $0.type == "Personal"}
                 let businessItems = expenses.items.filter { $0.type == "Business"}
@@ -56,8 +57,12 @@ struct ContentView: View {
             .navigationTitle("iExpense")
             .toolbar {
                 Button("Add Expense", systemImage: "plus") {
-                    showingAddExpense = true
+                    path.append("Add Expense")
+//                    showingAddExpense = true
                 }
+            }
+            .navigationDestination(for: String.self) { _ in
+                AddView(expenses: expenses)
             }
         }
         .sheet(isPresented: $showingAddExpense) {
