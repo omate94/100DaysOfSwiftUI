@@ -37,7 +37,7 @@ class Order: Codable {
                 name = decodedAddress.name
                 streetAddress = decodedAddress.streetAddress
                 city = decodedAddress.city
-                zip = decodedAddress.city
+                zip = decodedAddress.zip
                 return
             }
         }
@@ -81,7 +81,7 @@ class Order: Codable {
     }
     
     var hasValidAddress: Bool {
-        isValidAddesItem(name) && isValidAddesItem(streetAddress) && isValidAddesItem(city) && isValidAddesItem(zip)
+        isValid(name) && isValid(streetAddress) && isValid(city) && isValid(zip)
     }
     
     var cost: Decimal {
@@ -100,7 +100,7 @@ class Order: Codable {
         return cost
     }
     
-    private func isValidAddesItem(_ item: String) -> Bool {
+    private func isValid(_ item: String) -> Bool {
         item.trimmingCharacters(in: .whitespacesAndNewlines).isEmpty == false
     }
     
