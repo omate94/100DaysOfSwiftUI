@@ -6,9 +6,11 @@
 //
 
 import SwiftUI
+import SwiftData
 
 struct ContentView: View {
-    @State private var users: [User] = []
+    @Environment(\.modelContext) var modelContext
+    @Query private var users: [User]
     var body: some View {
         NavigationStack {
             List(users, id: \.self.id) { user in
@@ -30,6 +32,7 @@ struct ContentView: View {
             .navigationTitle("FriendFace")
         }
         .task {
+            try? modelContext.delete(model: User.self)
             await loadData()
         }
             
@@ -46,7 +49,9 @@ struct ContentView: View {
             let decoder = JSONDecoder()
             decoder.dateDecodingStrategy = .iso8601
             let decodedResponse = try decoder.decode([User].self, from: data)
-            users = decodedResponse
+            decodedResponse.forEach { user in
+                modelContext.insert(user)
+            }
         } catch {
             print("Invalid data")
         }

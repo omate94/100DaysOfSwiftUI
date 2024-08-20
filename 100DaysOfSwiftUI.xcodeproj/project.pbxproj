@@ -838,7 +838,6 @@
 		C8B5C0092C74DF4F00C09EB4 /* FriendFace */ = {
 			isa = PBXGroup;
 			children = (
-				C8B5C01C2C74E7FD00C09EB4 /* New Group */,
 				C8B5C00A2C74DF4F00C09EB4 /* FriendFaceApp.swift */,
 				C8B5C00C2C74DF4F00C09EB4 /* ContentView.swift */,
 				C8B5C00E2C74DF5200C09EB4 /* Assets.xcassets */,
@@ -856,13 +855,6 @@
 				C8B5C0112C74DF5200C09EB4 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
-			sourceTree = "<group>";
-		};
-		C8B5C01C2C74E7FD00C09EB4 /* New Group */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = "New Group";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

@@ -6,6 +6,7 @@
 //
 
 import SwiftUI
+import SwiftData
 
 struct DetailsView: View {
     let user: User
@@ -72,8 +73,11 @@ struct DetailsView: View {
     }
 }
 
-#Preview {
-    DetailsView(user: User(id: "asd",
+#Preview {    
+    do {
+        let config = ModelConfiguration(isStoredInMemoryOnly: true)
+        let container = try ModelContainer(for: User.self, configurations: config)
+        let example = User(id: "asd",
                            isActive: false,
                            name: "Test User",
                            age: 32,
@@ -86,6 +90,12 @@ struct DetailsView: View {
                                      Friend(id: "1", name: "Test USer"),
                                      Friend(id: "1", name: "Test USer"),
                                      Friend(id: "1", name: "Test USer"),
-                                     Friend(id: "1", name: "Test USer")]))
+                                     Friend(id: "1", name: "Test USer")])
+
+        return DetailsView(user: example)
+            .modelContainer(container)
+    } catch {
+        return Text("Failed to create preview: \(error.localizedDescription)")
+    }
 }
 
