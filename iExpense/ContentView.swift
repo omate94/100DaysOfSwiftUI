@@ -6,84 +6,62 @@
 //
 
 import SwiftUI
+import SwiftData
 
 struct ContentView: View {
-    @State private var expenses = Expenses()
+//    @State private var expenses = Expenses()
     @State private var showingAddExpense = false
     @State private var path = [String]()
-    
-    private let localCurrencyCode = Locale.current.currency?.identifier
+    @State private var sortOrder = [
+        SortDescriptor(\ManagedExpenseItem.name),
+        SortDescriptor(\ManagedExpenseItem.amount)
+    ]
+    @State private var filter: String = ""
     
     var body: some View {
         NavigationStack(path: $path) {
-            List {
-                let personalItems = expenses.items.filter { $0.type == "Personal"}
-                let businessItems = expenses.items.filter { $0.type == "Business"}
-                
-                Section("Personal") {
-                    ForEach(personalItems) { item in
-                        HStack {
-                            VStack(alignment: .leading) {
-                                Text(item.name)
-                                    .font(.headline)
-                                Text(item.type)
-                            }
-
-                            Spacer()
-                            Text(item.amount, format: .currency(code: localCurrencyCode ?? "USD"))
-                                .foregroundStyle(item.amount < 101 ? (item.amount > 10 ? .orange: .green) : .red)
-                        }
-                    }
-                    .onDelete(perform: removeItemsFromPersonal)
-                }
-                
-                Section("Business") {
-                    ForEach(businessItems) { item in
-                        HStack {
-                            VStack(alignment: .leading) {
-                                Text(item.name)
-                                    .font(.headline)
-                                Text(item.type)
-                            }
-                            
-                            Spacer()
-                            Text(item.amount, format: .currency(code: localCurrencyCode ?? "USD"))
-                                .foregroundStyle(item.amount < 101 ? (item.amount > 10 ? .orange: .green) : .red)
-                        }
-                    }
-                    .onDelete(perform: removeItemsFromBusiness)
-                }
-            }
+            ExpenseView(type: filter, sortOrder: sortOrder)
             .navigationTitle("iExpense")
             .toolbar {
                 Button("Add Expense", systemImage: "plus") {
                     path.append("Add Expense")
 //                    showingAddExpense = true
                 }
+                
+                Menu("Filter", systemImage: "arrow.up.arrow.down") {
+                    Picker("Filter", selection: $filter) {
+                        Text("Show all")
+                            .tag("")
+                        Text("Show Personal")
+                            .tag("Personal")
+                        Text("Show Business")
+                            .tag("Business")
+                    }
+                }
+                
+                Menu("Sort", systemImage: "arrow.up.arrow.down") {
+                    Picker("Sort", selection: $sortOrder) {
+                        Text("Sort by Name")
+                            .tag([
+                                SortDescriptor(\ManagedExpenseItem.name),
+                                SortDescriptor(\ManagedExpenseItem.amount)
+                            ])
+                        
+                        Text("Sort by Amount")
+                            .tag([
+                                SortDescriptor(\ManagedExpenseItem.amount),
+                                SortDescriptor(\ManagedExpenseItem.name)
+                            ])
+                    }
+                }
             }
             .navigationDestination(for: String.self) { _ in
-                AddView(expenses: expenses)
+                AddView()
             }
         }
         .sheet(isPresented: $showingAddExpense) {
-            AddView(expenses: expenses)
+            AddView()
         }
-    }
-    
-    private func removeItemsFromPersonal(at offsets: IndexSet) {
-        removeItem(from: "Personal", at: offsets)
-    }
-    
-    private func removeItemsFromBusiness(at offsets: IndexSet) {
-        removeItem(from: "Business", at: offsets)
-    }
-    
-    private func removeItem(from type: String, at offsets: IndexSet) {
-        let items = expenses.items.filter { $0.type == type}
-        let itemToDelete = items[offsets.first ?? 0]
-        let index = expenses.items.firstIndex(where: {$0.id == itemToDelete.id})
-        guard let index else { return }
-        expenses.items.remove(at: index)
     }
 
 }
