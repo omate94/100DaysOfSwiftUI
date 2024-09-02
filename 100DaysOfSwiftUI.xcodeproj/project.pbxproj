@@ -121,6 +121,15 @@
 		C8B5C05B2C768C1100C09EB4 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8B5C05A2C768C1100C09EB4 /* ContentView.swift */; };
 		C8B5C05D2C768C1400C09EB4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C8B5C05C2C768C1400C09EB4 /* Assets.xcassets */; };
 		C8B5C0602C768C1400C09EB4 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C8B5C05F2C768C1400C09EB4 /* Preview Assets.xcassets */; };
+		C8B5C06B2C7E6D4900C09EB4 /* BucketListApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8B5C06A2C7E6D4900C09EB4 /* BucketListApp.swift */; };
+		C8B5C06D2C7E6D4900C09EB4 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8B5C06C2C7E6D4900C09EB4 /* ContentView.swift */; };
+		C8B5C06F2C7E6D4C00C09EB4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C8B5C06E2C7E6D4C00C09EB4 /* Assets.xcassets */; };
+		C8B5C0722C7E6D4C00C09EB4 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C8B5C0712C7E6D4C00C09EB4 /* Preview Assets.xcassets */; };
+		C8B5C0772C7E730400C09EB4 /* Location.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8B5C0762C7E730400C09EB4 /* Location.swift */; };
+		C8B5C0792C7E763500C09EB4 /* EditView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8B5C0782C7E763500C09EB4 /* EditView.swift */; };
+		C8B5C07B2C7E7B6400C09EB4 /* Result.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8B5C07A2C7E7B6400C09EB4 /* Result.swift */; };
+		C8B5C07D2C7E7F2800C09EB4 /* ContentView-ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8B5C07C2C7E7F2800C09EB4 /* ContentView-ViewModel.swift */; };
+		C8B5C07F2C86639700C09EB4 /* EditView-ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8B5C07E2C86639700C09EB4 /* EditView-ViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -256,6 +265,16 @@
 		C8B5C05A2C768C1100C09EB4 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		C8B5C05C2C768C1400C09EB4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C8B5C05F2C768C1400C09EB4 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		C8B5C0682C7E6D4900C09EB4 /* BucketList.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BucketList.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		C8B5C06A2C7E6D4900C09EB4 /* BucketListApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BucketListApp.swift; sourceTree = "<group>"; };
+		C8B5C06C2C7E6D4900C09EB4 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		C8B5C06E2C7E6D4C00C09EB4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		C8B5C0712C7E6D4C00C09EB4 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		C8B5C0762C7E730400C09EB4 /* Location.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Location.swift; sourceTree = "<group>"; };
+		C8B5C0782C7E763500C09EB4 /* EditView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditView.swift; sourceTree = "<group>"; };
+		C8B5C07A2C7E7B6400C09EB4 /* Result.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Result.swift; sourceTree = "<group>"; };
+		C8B5C07C2C7E7F2800C09EB4 /* ContentView-ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ContentView-ViewModel.swift"; sourceTree = "<group>"; };
+		C8B5C07E2C86639700C09EB4 /* EditView-ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "EditView-ViewModel.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -385,6 +404,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		C8B5C0652C7E6D4900C09EB4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -409,6 +435,7 @@
 				C8B5BFE72C72428D00C09EB4 /* SwiftDataProject */,
 				C8B5C0092C74DF4F00C09EB4 /* FriendFace */,
 				C8B5C0572C768C1100C09EB4 /* Instafilter */,
+				C8B5C0692C7E6D4900C09EB4 /* BucketList */,
 				C82DB1DC2C5ADC1B0014923E /* Products */,
 			);
 			sourceTree = "<group>";
@@ -434,6 +461,7 @@
 				C8B5BFE62C72428D00C09EB4 /* SwiftDataProject.app */,
 				C8B5C0082C74DF4F00C09EB4 /* FriendFace.app */,
 				C8B5C0562C768C1100C09EB4 /* Instafilter.app */,
+				C8B5C0682C7E6D4900C09EB4 /* BucketList.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -894,6 +922,30 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
+		C8B5C0692C7E6D4900C09EB4 /* BucketList */ = {
+			isa = PBXGroup;
+			children = (
+				C8B5C06A2C7E6D4900C09EB4 /* BucketListApp.swift */,
+				C8B5C06C2C7E6D4900C09EB4 /* ContentView.swift */,
+				C8B5C06E2C7E6D4C00C09EB4 /* Assets.xcassets */,
+				C8B5C0702C7E6D4C00C09EB4 /* Preview Content */,
+				C8B5C0762C7E730400C09EB4 /* Location.swift */,
+				C8B5C0782C7E763500C09EB4 /* EditView.swift */,
+				C8B5C07A2C7E7B6400C09EB4 /* Result.swift */,
+				C8B5C07C2C7E7F2800C09EB4 /* ContentView-ViewModel.swift */,
+				C8B5C07E2C86639700C09EB4 /* EditView-ViewModel.swift */,
+			);
+			path = BucketList;
+			sourceTree = "<group>";
+		};
+		C8B5C0702C7E6D4C00C09EB4 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				C8B5C0712C7E6D4C00C09EB4 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -1203,6 +1255,23 @@
 			productReference = C8B5C0562C768C1100C09EB4 /* Instafilter.app */;
 			productType = "com.apple.product-type.application";
 		};
+		C8B5C0672C7E6D4900C09EB4 /* BucketList */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C8B5C0752C7E6D4C00C09EB4 /* Build configuration list for PBXNativeTarget "BucketList" */;
+			buildPhases = (
+				C8B5C0642C7E6D4900C09EB4 /* Sources */,
+				C8B5C0652C7E6D4900C09EB4 /* Frameworks */,
+				C8B5C0662C7E6D4900C09EB4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = BucketList;
+			productName = BucketList;
+			productReference = C8B5C0682C7E6D4900C09EB4 /* BucketList.app */;
+			productType = "com.apple.product-type.application";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -1267,6 +1336,9 @@
 					C8B5C0552C768C1100C09EB4 = {
 						CreatedOnToolsVersion = 15.2;
 					};
+					C8B5C0672C7E6D4900C09EB4 = {
+						CreatedOnToolsVersion = 15.2;
+					};
 				};
 			};
 			buildConfigurationList = C82DB1D62C5ADC1B0014923E /* Build configuration list for PBXProject "100DaysOfSwiftUI" */;
@@ -1300,6 +1372,7 @@
 				C8B5BFE52C72428D00C09EB4 /* SwiftDataProject */,
 				C8B5C0072C74DF4F00C09EB4 /* FriendFace */,
 				C8B5C0552C768C1100C09EB4 /* Instafilter */,
+				C8B5C0672C7E6D4900C09EB4 /* BucketList */,
 			);
 		};
 /* End PBXProject section */
@@ -1467,6 +1540,15 @@
 			files = (
 				C8B5C0602C768C1400C09EB4 /* Preview Assets.xcassets in Resources */,
 				C8B5C05D2C768C1400C09EB4 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C8B5C0662C7E6D4900C09EB4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C8B5C0722C7E6D4C00C09EB4 /* Preview Assets.xcassets in Resources */,
+				C8B5C06F2C7E6D4C00C09EB4 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1671,6 +1753,20 @@
 			files = (
 				C8B5C05B2C768C1100C09EB4 /* ContentView.swift in Sources */,
 				C8B5C0592C768C1100C09EB4 /* InstafilterApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C8B5C0642C7E6D4900C09EB4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C8B5C06D2C7E6D4900C09EB4 /* ContentView.swift in Sources */,
+				C8B5C07D2C7E7F2800C09EB4 /* ContentView-ViewModel.swift in Sources */,
+				C8B5C07B2C7E7B6400C09EB4 /* Result.swift in Sources */,
+				C8B5C07F2C86639700C09EB4 /* EditView-ViewModel.swift in Sources */,
+				C8B5C0772C7E730400C09EB4 /* Location.swift in Sources */,
+				C8B5C0792C7E763500C09EB4 /* EditView.swift in Sources */,
+				C8B5C06B2C7E6D4900C09EB4 /* BucketListApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -2929,6 +3025,71 @@
 			};
 			name = Release;
 		};
+		C8B5C0732C7E6D4C00C09EB4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"BucketList/Preview Content\"";
+				DEVELOPMENT_TEAM = NUA29C2B66;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSFaceIDUsageDescription = "Please authenticate yourself to unlock your places";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.olahmate.BucketList;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		C8B5C0742C7E6D4C00C09EB4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"BucketList/Preview Content\"";
+				DEVELOPMENT_TEAM = NUA29C2B66;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSFaceIDUsageDescription = "Please authenticate yourself to unlock your places";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.olahmate.BucketList;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -3099,6 +3260,15 @@
 			buildConfigurations = (
 				C8B5C0612C768C1400C09EB4 /* Debug */,
 				C8B5C0622C768C1400C09EB4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C8B5C0752C7E6D4C00C09EB4 /* Build configuration list for PBXNativeTarget "BucketList" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C8B5C0732C7E6D4C00C09EB4 /* Debug */,
+				C8B5C0742C7E6D4C00C09EB4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
