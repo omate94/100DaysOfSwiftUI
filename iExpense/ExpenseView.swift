@@ -42,6 +42,9 @@ struct ExpenseView: View {
                         Text(item.amount, format: .currency(code: localCurrencyCode ?? "USD"))
                             .foregroundStyle(item.amount < 101 ? (item.amount > 10 ? .orange: .green) : .red)
                     }
+                        .accessibilityElement(children: .ignore)
+                        .accessibilityLabel("\(item.name) \(String(format: "%.2f", item.amount)), \(localCurrencyCode ?? "USD")")
+                        .accessibilityHint(item.type)
                 }
                 .onDelete(perform: removeItemsFromPersonal)
             }
@@ -59,6 +62,9 @@ struct ExpenseView: View {
                         Text(item.amount, format: .currency(code: localCurrencyCode ?? "USD"))
                             .foregroundStyle(item.amount < 101 ? (item.amount > 10 ? .orange: .green) : .red)
                     }
+                    .accessibilityElement(children: .ignore)
+                    .accessibilityLabel("\(item.name) \(String(format: "%.2f", item.amount)), \(localCurrencyCode ?? "USD")")
+                    .accessibilityHint(item.type)
                 }
                 .onDelete(perform: removeItemsFromBusiness)
             }
