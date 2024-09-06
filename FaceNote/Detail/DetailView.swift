@@ -10,22 +10,16 @@ import SwiftData
 import MapKit
 
 struct DetailView: View {
-    var person: Person
+    private let viewModel: ViewModel
     
-    private func getStartPosition() -> MapCameraPosition {
-        return MapCameraPosition.region(
-            MKCoordinateRegion(
-                center: CLLocationCoordinate2D(latitude: person.locationLat,
-                                               longitude: person.locationLong),
-                span: MKCoordinateSpan(latitudeDelta: 2, longitudeDelta: 2)
-            )
-        )
+    init(person: Person) {
+        self.viewModel =  ViewModel(person: person)
     }
     
     var body: some View {
         VStack {
             Group {
-                if let image = UIImage(data: person.photo) {
+                if let image = UIImage(data: viewModel.person.photo) {
                     Image(uiImage: image)
                         .resizable()
                         .frame(width: 200,height: 200)
@@ -49,8 +43,8 @@ struct DetailView: View {
             .zIndex(2)
             
             MapReader { proxy in
-                Map(initialPosition: getStartPosition()) {
-                    Annotation("", coordinate: CLLocationCoordinate2D(latitude: person.locationLat, longitude: person.locationLong)) {
+                Map(initialPosition: viewModel.getStartPosition()) {
+                    Annotation("", coordinate: CLLocationCoordinate2D(latitude: viewModel.person.locationLat, longitude: viewModel.person.locationLong)) {
                             Image(systemName: "star.circle")
                                 .resizable()
                                 .foregroundStyle(.red)
@@ -64,7 +58,7 @@ struct DetailView: View {
             .zIndex(1)
         }
         .background(.regularMaterial)
-        .navigationTitle(person.name)
+        .navigationTitle(viewModel.person.name)
         .navigationBarTitleDisplayMode(.inline)
     }
 }
