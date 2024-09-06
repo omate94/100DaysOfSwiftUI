@@ -14,7 +14,7 @@ struct ContentView: View {
     @State private var viewModel: ViewModel
     
     init(modelContext: ModelContext) {
-        let viewModel = ViewModel(modelContext: modelContext)
+        let viewModel = ViewModel(modelContext: modelContext, locationFetcher: LocationFetcher())
         _viewModel = State(initialValue: viewModel)
     }
 

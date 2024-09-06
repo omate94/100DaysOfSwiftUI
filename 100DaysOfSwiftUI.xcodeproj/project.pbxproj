@@ -141,6 +141,7 @@
 		C8B5C0A52C88E0FF00C09EB4 /* DetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8B5C0A42C88E0FF00C09EB4 /* DetailView.swift */; };
 		C8C042502C8A54FC00A22224 /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8C0424F2C8A54FC00A22224 /* Person.swift */; };
 		C8C042522C8A555400A22224 /* ContentView-ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8C042512C8A555400A22224 /* ContentView-ViewModel.swift */; };
+		C8C042542C8B4E1000A22224 /* LocationFetcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8C042532C8B4E1000A22224 /* LocationFetcher.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -299,6 +300,7 @@
 		C8B5C0A42C88E0FF00C09EB4 /* DetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailView.swift; sourceTree = "<group>"; };
 		C8C0424F2C8A54FC00A22224 /* Person.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Person.swift; sourceTree = "<group>"; };
 		C8C042512C8A555400A22224 /* ContentView-ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ContentView-ViewModel.swift"; sourceTree = "<group>"; };
+		C8C042532C8B4E1000A22224 /* LocationFetcher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationFetcher.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -1017,6 +1019,7 @@
 				C8B5C0A42C88E0FF00C09EB4 /* DetailView.swift */,
 				C8C0424F2C8A54FC00A22224 /* Person.swift */,
 				C8C042512C8A555400A22224 /* ContentView-ViewModel.swift */,
+				C8C042532C8B4E1000A22224 /* LocationFetcher.swift */,
 			);
 			path = FaceNote;
 			sourceTree = "<group>";
@@ -1928,6 +1931,7 @@
 			files = (
 				C8B5C09B2C88D50500C09EB4 /* ContentView.swift in Sources */,
 				C8B5C0992C88D50500C09EB4 /* FaceNoteApp.swift in Sources */,
+				C8C042542C8B4E1000A22224 /* LocationFetcher.swift in Sources */,
 				C8C042522C8A555400A22224 /* ContentView-ViewModel.swift in Sources */,
 				C8C042502C8A54FC00A22224 /* Person.swift in Sources */,
 				C8B5C0A52C88E0FF00C09EB4 /* DetailView.swift in Sources */,
@@ -3329,6 +3333,7 @@
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_NSFaceIDUsageDescription = "Please authenticate yourself to unlock your faces";
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "Share your location";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -3361,6 +3366,7 @@
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_NSFaceIDUsageDescription = "Please authenticate yourself to unlock your faces";
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "Share your location";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;

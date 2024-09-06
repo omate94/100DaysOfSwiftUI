@@ -14,7 +14,6 @@ import SwiftData
 extension ContentView {
     @Observable
     class ViewModel {
-        var modelContext: ModelContext
         var persons = [Person]()
         var isUnlocked = false
         var selectedItem: PhotosPickerItem?
@@ -22,8 +21,14 @@ extension ContentView {
         var showingAlert = false
         var name = ""
         
-        init(modelContext: ModelContext) {
+        private let locationFetcher: LocationFetcher
+        private let modelContext: ModelContext
+        
+        init(modelContext: ModelContext, locationFetcher: LocationFetcher) {
             self.modelContext = modelContext
+            self.locationFetcher = locationFetcher
+            
+            locationFetcher.start()
             fetchData()
         }
         
@@ -38,8 +43,13 @@ extension ContentView {
 
         func saveItem() {
             Task {
-                guard let imageData = try await selectedItem?.loadTransferable(type: Data.self) else { return }
-                modelContext.insert(Person(name: name, photo: imageData))
+                guard let imageData = try await selectedItem?.loadTransferable(type: Data.self),
+                      let location = locationFetcher.lastKnownLocation
+                else { return }
+                modelContext.insert(Person(name: name,
+                                           photo: imageData,
+                                           locationLong: location.longitude,
+                                           locationLat: location.latitude))
                 fetchData()
                 name = ""
                 selectedItem = nil
