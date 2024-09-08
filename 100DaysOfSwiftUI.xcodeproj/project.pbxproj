@@ -63,6 +63,14 @@
 		C849BC532C6D50B900B2641E /* Order.swift in Sources */ = {isa = PBXBuildFile; fileRef = C849BC522C6D50B900B2641E /* Order.swift */; };
 		C849BC562C6D529900B2641E /* AddressView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C849BC552C6D529900B2641E /* AddressView.swift */; };
 		C849BC582C6D533600B2641E /* CheckoutView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C849BC572C6D533600B2641E /* CheckoutView.swift */; };
+		C85420392C8DAD6A00208176 /* FlashzillaApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C85420382C8DAD6A00208176 /* FlashzillaApp.swift */; };
+		C854203B2C8DAD6A00208176 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C854203A2C8DAD6A00208176 /* ContentView.swift */; };
+		C854203D2C8DAD6D00208176 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C854203C2C8DAD6D00208176 /* Assets.xcassets */; };
+		C85420402C8DAD6D00208176 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C854203F2C8DAD6D00208176 /* Preview Assets.xcassets */; };
+		C85420452C8DADD200208176 /* Card.swift in Sources */ = {isa = PBXBuildFile; fileRef = C85420442C8DADD200208176 /* Card.swift */; };
+		C85420472C8DAE4900208176 /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C85420462C8DAE4900208176 /* CardView.swift */; };
+		C85420492C8DB05C00208176 /* View+Stacked.swift in Sources */ = {isa = PBXBuildFile; fileRef = C85420482C8DB05C00208176 /* View+Stacked.swift */; };
+		C854204B2C8E51FB00208176 /* EditCards.swift in Sources */ = {isa = PBXBuildFile; fileRef = C854204A2C8E51FB00208176 /* EditCards.swift */; };
 		C8964C7A2C626A2500024577 /* MultiplicationTablesApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8964C792C626A2500024577 /* MultiplicationTablesApp.swift */; };
 		C8964C7C2C626A2500024577 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8964C7B2C626A2500024577 /* ContentView.swift */; };
 		C8964C7E2C626A2A00024577 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C8964C7D2C626A2900024577 /* Assets.xcassets */; };
@@ -221,6 +229,15 @@
 		C849BC522C6D50B900B2641E /* Order.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Order.swift; sourceTree = "<group>"; };
 		C849BC552C6D529900B2641E /* AddressView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddressView.swift; sourceTree = "<group>"; };
 		C849BC572C6D533600B2641E /* CheckoutView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckoutView.swift; sourceTree = "<group>"; };
+		C85420362C8DAD6A00208176 /* Flashzilla.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Flashzilla.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		C85420382C8DAD6A00208176 /* FlashzillaApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlashzillaApp.swift; sourceTree = "<group>"; };
+		C854203A2C8DAD6A00208176 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		C854203C2C8DAD6D00208176 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		C854203F2C8DAD6D00208176 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		C85420442C8DADD200208176 /* Card.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Card.swift; sourceTree = "<group>"; };
+		C85420462C8DAE4900208176 /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
+		C85420482C8DB05C00208176 /* View+Stacked.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "View+Stacked.swift"; sourceTree = "<group>"; };
+		C854204A2C8E51FB00208176 /* EditCards.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditCards.swift; sourceTree = "<group>"; };
 		C8964C772C626A2500024577 /* MultiplicationTables.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MultiplicationTables.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C8964C792C626A2500024577 /* MultiplicationTablesApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MultiplicationTablesApp.swift; sourceTree = "<group>"; };
 		C8964C7B2C626A2500024577 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -399,6 +416,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		C85420332C8DAD6A00208176 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		C8964C742C626A2500024577 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -505,6 +529,7 @@
 				C8B5C0852C866B4700C09EB4 /* AccessibilitySandbox */,
 				C8B5C0972C88D50500C09EB4 /* FaceNote */,
 				C8C0425A2C8B5A0500A22224 /* HotProspects */,
+				C85420372C8DAD6A00208176 /* Flashzilla */,
 				C82DB1DC2C5ADC1B0014923E /* Products */,
 			);
 			sourceTree = "<group>";
@@ -534,6 +559,7 @@
 				C8B5C0842C866B4600C09EB4 /* AccessibilitySandbox.app */,
 				C8B5C0962C88D50500C09EB4 /* FaceNote.app */,
 				C8C042592C8B5A0500A22224 /* HotProspects.app */,
+				C85420362C8DAD6A00208176 /* Flashzilla.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -787,6 +813,29 @@
 				C849BC572C6D533600B2641E /* CheckoutView.swift */,
 			);
 			path = View;
+			sourceTree = "<group>";
+		};
+		C85420372C8DAD6A00208176 /* Flashzilla */ = {
+			isa = PBXGroup;
+			children = (
+				C85420382C8DAD6A00208176 /* FlashzillaApp.swift */,
+				C854203A2C8DAD6A00208176 /* ContentView.swift */,
+				C854203C2C8DAD6D00208176 /* Assets.xcassets */,
+				C854203E2C8DAD6D00208176 /* Preview Content */,
+				C85420442C8DADD200208176 /* Card.swift */,
+				C85420462C8DAE4900208176 /* CardView.swift */,
+				C85420482C8DB05C00208176 /* View+Stacked.swift */,
+				C854204A2C8E51FB00208176 /* EditCards.swift */,
+			);
+			path = Flashzilla;
+			sourceTree = "<group>";
+		};
+		C854203E2C8DAD6D00208176 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				C854203F2C8DAD6D00208176 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
 			sourceTree = "<group>";
 		};
 		C8964C782C626A2500024577 /* MultiplicationTables */ = {
@@ -1321,6 +1370,23 @@
 			productReference = C849BC432C6D496D00B2641E /* CupcakeCorner.app */;
 			productType = "com.apple.product-type.application";
 		};
+		C85420352C8DAD6A00208176 /* Flashzilla */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C85420432C8DAD6D00208176 /* Build configuration list for PBXNativeTarget "Flashzilla" */;
+			buildPhases = (
+				C85420322C8DAD6A00208176 /* Sources */,
+				C85420332C8DAD6A00208176 /* Frameworks */,
+				C85420342C8DAD6A00208176 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Flashzilla;
+			productName = Flashzilla;
+			productReference = C85420362C8DAD6A00208176 /* Flashzilla.app */;
+			productType = "com.apple.product-type.application";
+		};
 		C8964C762C626A2500024577 /* MultiplicationTables */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = C8964C842C626A2A00024577 /* Build configuration list for PBXNativeTarget "MultiplicationTables" */;
@@ -1554,6 +1620,9 @@
 					C849BC422C6D496D00B2641E = {
 						CreatedOnToolsVersion = 15.2;
 					};
+					C85420352C8DAD6A00208176 = {
+						CreatedOnToolsVersion = 15.2;
+					};
 					C8964C762C626A2500024577 = {
 						CreatedOnToolsVersion = 15.2;
 					};
@@ -1627,6 +1696,7 @@
 				C8B5C0832C866B4600C09EB4 /* AccessibilitySandbox */,
 				C8B5C0952C88D50500C09EB4 /* FaceNote */,
 				C8C042582C8B5A0500A22224 /* HotProspects */,
+				C85420352C8DAD6A00208176 /* Flashzilla */,
 			);
 		};
 /* End PBXProject section */
@@ -1729,6 +1799,15 @@
 			files = (
 				C849BC4D2C6D497000B2641E /* Preview Assets.xcassets in Resources */,
 				C849BC4A2C6D497000B2641E /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C85420342C8DAD6A00208176 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C85420402C8DAD6D00208176 /* Preview Assets.xcassets in Resources */,
+				C854203D2C8DAD6D00208176 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1941,6 +2020,19 @@
 				C849BC582C6D533600B2641E /* CheckoutView.swift in Sources */,
 				C849BC482C6D496D00B2641E /* ContentView.swift in Sources */,
 				C849BC462C6D496D00B2641E /* CupcakeCornerApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C85420322C8DAD6A00208176 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C85420492C8DB05C00208176 /* View+Stacked.swift in Sources */,
+				C854203B2C8DAD6A00208176 /* ContentView.swift in Sources */,
+				C85420452C8DADD200208176 /* Card.swift in Sources */,
+				C854204B2C8E51FB00208176 /* EditCards.swift in Sources */,
+				C85420472C8DAE4900208176 /* CardView.swift in Sources */,
+				C85420392C8DAD6A00208176 /* FlashzillaApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -2900,6 +2992,67 @@
 			};
 			name = Release;
 		};
+		C85420412C8DAD6D00208176 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Flashzilla/Preview Content\"";
+				DEVELOPMENT_TEAM = NUA29C2B66;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.olahmate.Flashzilla;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		C85420422C8DAD6D00208176 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Flashzilla/Preview Content\"";
+				DEVELOPMENT_TEAM = NUA29C2B66;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.olahmate.Flashzilla;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
 		C8964C822C626A2A00024577 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -3710,6 +3863,15 @@
 			buildConfigurations = (
 				C849BC4E2C6D497000B2641E /* Debug */,
 				C849BC4F2C6D497000B2641E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C85420432C8DAD6D00208176 /* Build configuration list for PBXNativeTarget "Flashzilla" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C85420412C8DAD6D00208176 /* Debug */,
+				C85420422C8DAD6D00208176 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
