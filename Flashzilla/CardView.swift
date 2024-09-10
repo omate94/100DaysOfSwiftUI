@@ -9,7 +9,7 @@ import SwiftUI
 
 struct CardView: View {
     let card: Card
-    var removal: (() -> Void)? = nil
+    var removal: ((Bool) -> Void)? = nil
     
     @State private var offset = CGSize.zero
     @State private var isShowingAnswer = false
@@ -26,12 +26,7 @@ struct CardView: View {
                             .opacity(1 - Double(abs(offset.width / 50)))
 
                 )
-                .background(
-                    accessibilityDifferentiateWithoutColor
-                        ? nil
-                        : RoundedRectangle(cornerRadius: 25)
-                            .fill(offset.width > 0 ? .green : .red)
-                )
+                .dynamicBackgroundStyle(offset: offset)
                 .shadow(radius: 10)
 
             VStack {
@@ -66,7 +61,7 @@ struct CardView: View {
                 }
                 .onEnded { _ in
                     if abs(offset.width) > 100 {
-                        removal?()
+                        removal?(offset.width > 0)
                     } else {
                         offset = .zero
                     }

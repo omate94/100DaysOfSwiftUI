@@ -69,8 +69,9 @@
 		C85420402C8DAD6D00208176 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C854203F2C8DAD6D00208176 /* Preview Assets.xcassets */; };
 		C85420452C8DADD200208176 /* Card.swift in Sources */ = {isa = PBXBuildFile; fileRef = C85420442C8DADD200208176 /* Card.swift */; };
 		C85420472C8DAE4900208176 /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C85420462C8DAE4900208176 /* CardView.swift */; };
-		C85420492C8DB05C00208176 /* View+Stacked.swift in Sources */ = {isa = PBXBuildFile; fileRef = C85420482C8DB05C00208176 /* View+Stacked.swift */; };
+		C85420492C8DB05C00208176 /* View+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = C85420482C8DB05C00208176 /* View+Extensions.swift */; };
 		C854204B2C8E51FB00208176 /* EditCards.swift in Sources */ = {isa = PBXBuildFile; fileRef = C854204A2C8E51FB00208176 /* EditCards.swift */; };
+		C85420502C8F9DAF00208176 /* DynamicBackground.swift in Sources */ = {isa = PBXBuildFile; fileRef = C854204F2C8F9DAF00208176 /* DynamicBackground.swift */; };
 		C85420522C90EC3800208176 /* CardDataProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = C85420512C90EC3800208176 /* CardDataProvider.swift */; };
 		C8964C7A2C626A2500024577 /* MultiplicationTablesApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8964C792C626A2500024577 /* MultiplicationTablesApp.swift */; };
 		C8964C7C2C626A2500024577 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8964C7B2C626A2500024577 /* ContentView.swift */; };
@@ -237,8 +238,9 @@
 		C854203F2C8DAD6D00208176 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		C85420442C8DADD200208176 /* Card.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Card.swift; sourceTree = "<group>"; };
 		C85420462C8DAE4900208176 /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
-		C85420482C8DB05C00208176 /* View+Stacked.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "View+Stacked.swift"; sourceTree = "<group>"; };
+		C85420482C8DB05C00208176 /* View+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "View+Extensions.swift"; sourceTree = "<group>"; };
 		C854204A2C8E51FB00208176 /* EditCards.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditCards.swift; sourceTree = "<group>"; };
+		C854204F2C8F9DAF00208176 /* DynamicBackground.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DynamicBackground.swift; sourceTree = "<group>"; };
 		C85420512C90EC3800208176 /* CardDataProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardDataProvider.swift; sourceTree = "<group>"; };
 		C8964C772C626A2500024577 /* MultiplicationTables.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MultiplicationTables.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C8964C792C626A2500024577 /* MultiplicationTablesApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MultiplicationTablesApp.swift; sourceTree = "<group>"; };
@@ -826,8 +828,9 @@
 				C854203E2C8DAD6D00208176 /* Preview Content */,
 				C85420442C8DADD200208176 /* Card.swift */,
 				C85420462C8DAE4900208176 /* CardView.swift */,
-				C85420482C8DB05C00208176 /* View+Stacked.swift */,
+				C85420482C8DB05C00208176 /* View+Extensions.swift */,
 				C854204A2C8E51FB00208176 /* EditCards.swift */,
+				C854204F2C8F9DAF00208176 /* DynamicBackground.swift */,
 				C85420512C90EC3800208176 /* CardDataProvider.swift */,
 			);
 			path = Flashzilla;
@@ -2030,12 +2033,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C85420522C90EC3800208176 /* CardDataProvider.swift in Sources */,
-				C85420492C8DB05C00208176 /* View+Stacked.swift in Sources */,
+                C85420522C90EC3800208176 /* CardDataProvider.swift in Sources */,
+                C85420492C8DB05C00208176 /* View+Extensions.swift in Sources */,
 				C854203B2C8DAD6A00208176 /* ContentView.swift in Sources */,
 				C85420452C8DADD200208176 /* Card.swift in Sources */,
 				C854204B2C8E51FB00208176 /* EditCards.swift in Sources */,
 				C85420472C8DAE4900208176 /* CardView.swift in Sources */,
+				C85420502C8F9DAF00208176 /* DynamicBackground.swift in Sources */,
 				C85420392C8DAD6A00208176 /* FlashzillaApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

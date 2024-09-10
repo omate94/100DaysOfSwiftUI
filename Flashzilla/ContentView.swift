@@ -42,15 +42,15 @@ struct ContentView: View {
                     .clipShape(.capsule)
                 
                 ZStack {
-                    ForEach(0..<cards.count, id: \.self) { index in
-                        CardView(card: cards[index]) {
-                           withAnimation {
-                               removeCard(at: index)
-                           }
+                    ForEach(cards) { card in
+                        CardView(card: card) { correct in
+                            withAnimation {
+                                removeCard(at: getIndex(of: card), correct: correct)
+                            }
                         }
-                        .stacked(at: index, in: cards.count)
-                        .allowsHitTesting(index == cards.count - 1)
-                        .accessibilityHidden(index < cards.count - 1)
+                        .stacked(at: getIndex(of: card), in: cards.count)
+                        .allowsHitTesting(getIndex(of: card) == cards.count - 1)
+                        .accessibilityHidden(getIndex(of: card) < cards.count - 1)
                     }
                 }
                 .allowsHitTesting(timeRemaining > 0)
@@ -91,7 +91,7 @@ struct ContentView: View {
                     HStack {
                         Button {
                             withAnimation {
-                                removeCard(at: cards.count - 1)
+                                removeCard(at: cards.count - 1, correct: false)
                             }
                         } label: {
                             Image(systemName: "xmark.circle")
@@ -106,7 +106,7 @@ struct ContentView: View {
 
                         Button {
                             withAnimation {
-                                removeCard(at: cards.count - 1)
+                                removeCard(at: cards.count - 1, correct: true)
                             }
                         } label: {
                             Image(systemName: "checkmark.circle")
@@ -145,10 +145,15 @@ struct ContentView: View {
         .onAppear(perform: resetCards)
     }
     
-    private func removeCard(at index: Int) {
+    private func removeCard(at index: Int, correct: Bool) {
         guard index >= 0 else { return }
         
+        let item = cards[index]
         cards.remove(at: index)
+    
+        if correct == false {
+            cards.insert(Card(prompt: item.prompt, answer: item.answer), at: 0)
+        }
         
         if cards.isEmpty {
             isActive = false
@@ -159,6 +164,10 @@ struct ContentView: View {
         timeRemaining = 100
         isActive = true
         loadData()  
+    }
+    
+    private func getIndex(of card: Card) -> Int {
+        return cards.firstIndex { $0.id == card.id }!
     }
     
     private func loadData() {
