@@ -6,18 +6,26 @@
 //
 
 import SwiftUI
+import SwiftData
 
 struct ContentView: View {
 //    @State private var cards = Array<Card>(repeating: .example, count: 10)
+    private let dataProvider: CardDataProvider
     @State private var cards = [Card]()
     @State private var timeRemaining = 100
     @State private var isActive = true
     @State private var showingEditScreen = false
+    
+    
     @Environment(\.accessibilityDifferentiateWithoutColor) var accessibilityDifferentiateWithoutColor
     @Environment(\.scenePhase) var scenePhase
     @Environment(\.accessibilityVoiceOverEnabled) var accessibilityVoiceOverEnabled
     
     private let timer = Timer.publish(every: 1, on: .main, in: .common).autoconnect()
+    
+    init(modelContext: ModelContext) {
+        dataProvider = CardDataProvider(modelContext: modelContext)
+    }
     
     var body: some View {
         ZStack {
@@ -131,7 +139,9 @@ struct ContentView: View {
                 isActive = false
             }
         }
-        .sheet(isPresented: $showingEditScreen, onDismiss: resetCards, content: EditCards.init)
+        .sheet(isPresented: $showingEditScreen, onDismiss: resetCards, content: {
+            EditCards(dataProvider: dataProvider)
+        })
         .onAppear(perform: resetCards)
     }
     
@@ -152,14 +162,16 @@ struct ContentView: View {
     }
     
     private func loadData() {
-        if let data = UserDefaults.standard.data(forKey: "Cards") {
-            if let decoded = try? JSONDecoder().decode([Card].self, from: data) {
-                cards = decoded
-            }
-        }
+        cards = dataProvider.cards
     }
 }
 
 #Preview {
-    ContentView()
+    do {
+        let config = ModelConfiguration(isStoredInMemoryOnly: true)
+        let container = try ModelContainer(for: Card.self, configurations: config)
+        return ContentView(modelContext: container.mainContext)
+    } catch {
+        return Text("Failed to create preview: \(error.localizedDescription)")
+    }
 }

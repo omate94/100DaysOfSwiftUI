@@ -71,6 +71,7 @@
 		C85420472C8DAE4900208176 /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C85420462C8DAE4900208176 /* CardView.swift */; };
 		C85420492C8DB05C00208176 /* View+Stacked.swift in Sources */ = {isa = PBXBuildFile; fileRef = C85420482C8DB05C00208176 /* View+Stacked.swift */; };
 		C854204B2C8E51FB00208176 /* EditCards.swift in Sources */ = {isa = PBXBuildFile; fileRef = C854204A2C8E51FB00208176 /* EditCards.swift */; };
+		C85420522C90EC3800208176 /* CardDataProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = C85420512C90EC3800208176 /* CardDataProvider.swift */; };
 		C8964C7A2C626A2500024577 /* MultiplicationTablesApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8964C792C626A2500024577 /* MultiplicationTablesApp.swift */; };
 		C8964C7C2C626A2500024577 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8964C7B2C626A2500024577 /* ContentView.swift */; };
 		C8964C7E2C626A2A00024577 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C8964C7D2C626A2900024577 /* Assets.xcassets */; };
@@ -238,6 +239,7 @@
 		C85420462C8DAE4900208176 /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
 		C85420482C8DB05C00208176 /* View+Stacked.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "View+Stacked.swift"; sourceTree = "<group>"; };
 		C854204A2C8E51FB00208176 /* EditCards.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditCards.swift; sourceTree = "<group>"; };
+		C85420512C90EC3800208176 /* CardDataProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardDataProvider.swift; sourceTree = "<group>"; };
 		C8964C772C626A2500024577 /* MultiplicationTables.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MultiplicationTables.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C8964C792C626A2500024577 /* MultiplicationTablesApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MultiplicationTablesApp.swift; sourceTree = "<group>"; };
 		C8964C7B2C626A2500024577 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -826,6 +828,7 @@
 				C85420462C8DAE4900208176 /* CardView.swift */,
 				C85420482C8DB05C00208176 /* View+Stacked.swift */,
 				C854204A2C8E51FB00208176 /* EditCards.swift */,
+				C85420512C90EC3800208176 /* CardDataProvider.swift */,
 			);
 			path = Flashzilla;
 			sourceTree = "<group>";
@@ -2027,6 +2030,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C85420522C90EC3800208176 /* CardDataProvider.swift in Sources */,
 				C85420492C8DB05C00208176 /* View+Stacked.swift in Sources */,
 				C854203B2C8DAD6A00208176 /* ContentView.swift in Sources */,
 				C85420452C8DADD200208176 /* Card.swift in Sources */,

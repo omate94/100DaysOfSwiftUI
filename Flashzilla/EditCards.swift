@@ -6,12 +6,19 @@
 //
 
 import SwiftUI
+import SwiftData
 
 struct EditCards: View {
     @Environment(\.dismiss) var dismiss
     @State private var cards = [Card]()
     @State private var newPrompt = ""
     @State private var newAnswer = ""
+    
+    private let dataProvider: CardDataProvider
+    
+    init(dataProvider: CardDataProvider) {
+        self.dataProvider = dataProvider
+    }
     
     var body: some View {
         NavigationStack {
@@ -47,17 +54,7 @@ struct EditCards: View {
     }
     
     private func loadData() {
-        if let data = UserDefaults.standard.data(forKey: "Cards") {
-            if let decoded = try? JSONDecoder().decode([Card].self, from: data) {
-                cards = decoded
-            }
-        }
-    }
-
-    private func saveData() {
-        if let data = try? JSONEncoder().encode(cards) {
-            UserDefaults.standard.set(data, forKey: "Cards")
-        }
+        cards = dataProvider.cards
     }
 
     private func addCard() {
@@ -66,16 +63,23 @@ struct EditCards: View {
         guard trimmedPrompt.isEmpty == false && trimmedAnswer.isEmpty == false else { return }
 
         let card = Card(prompt: trimmedPrompt, answer: trimmedAnswer)
-        cards.insert(card, at: 0)
-        saveData()
+        dataProvider.saveData(card: card)
+        loadData()
     }
 
     private func removeCards(at offsets: IndexSet) {
-        cards.remove(atOffsets: offsets)
-        saveData()
+        let cardsToDelete = offsets.map { cards[$0] }
+        dataProvider.remove(cards: cardsToDelete)
+        loadData()
     }
 }
 
 #Preview {
-    EditCards()
+    do {
+        let config = ModelConfiguration(isStoredInMemoryOnly: true)
+        let container = try ModelContainer(for: Card.self, configurations: config)
+        return EditCards(dataProvider: CardDataProvider(modelContext: container.mainContext))
+    } catch {
+        return Text("Failed to create preview: \(error.localizedDescription)")
+    }
 }
