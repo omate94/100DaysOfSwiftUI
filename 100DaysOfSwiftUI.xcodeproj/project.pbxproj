@@ -73,6 +73,10 @@
 		C854204B2C8E51FB00208176 /* EditCards.swift in Sources */ = {isa = PBXBuildFile; fileRef = C854204A2C8E51FB00208176 /* EditCards.swift */; };
 		C85420502C8F9DAF00208176 /* DynamicBackground.swift in Sources */ = {isa = PBXBuildFile; fileRef = C854204F2C8F9DAF00208176 /* DynamicBackground.swift */; };
 		C85420522C90EC3800208176 /* CardDataProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = C85420512C90EC3800208176 /* CardDataProvider.swift */; };
+		C854205A2C91FB2100208176 /* LayoutAndGeometryApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C85420592C91FB2100208176 /* LayoutAndGeometryApp.swift */; };
+		C854205C2C91FB2100208176 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C854205B2C91FB2100208176 /* ContentView.swift */; };
+		C854205E2C91FB2400208176 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C854205D2C91FB2400208176 /* Assets.xcassets */; };
+		C85420612C91FB2400208176 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C85420602C91FB2400208176 /* Preview Assets.xcassets */; };
 		C8964C7A2C626A2500024577 /* MultiplicationTablesApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8964C792C626A2500024577 /* MultiplicationTablesApp.swift */; };
 		C8964C7C2C626A2500024577 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8964C7B2C626A2500024577 /* ContentView.swift */; };
 		C8964C7E2C626A2A00024577 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C8964C7D2C626A2900024577 /* Assets.xcassets */; };
@@ -242,6 +246,11 @@
 		C854204A2C8E51FB00208176 /* EditCards.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditCards.swift; sourceTree = "<group>"; };
 		C854204F2C8F9DAF00208176 /* DynamicBackground.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DynamicBackground.swift; sourceTree = "<group>"; };
 		C85420512C90EC3800208176 /* CardDataProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardDataProvider.swift; sourceTree = "<group>"; };
+		C85420572C91FB2000208176 /* LayoutAndGeometry.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LayoutAndGeometry.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		C85420592C91FB2100208176 /* LayoutAndGeometryApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LayoutAndGeometryApp.swift; sourceTree = "<group>"; };
+		C854205B2C91FB2100208176 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		C854205D2C91FB2400208176 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		C85420602C91FB2400208176 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		C8964C772C626A2500024577 /* MultiplicationTables.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MultiplicationTables.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C8964C792C626A2500024577 /* MultiplicationTablesApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MultiplicationTablesApp.swift; sourceTree = "<group>"; };
 		C8964C7B2C626A2500024577 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -427,6 +436,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		C85420542C91FB2000208176 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		C8964C742C626A2500024577 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -534,6 +550,7 @@
 				C8B5C0972C88D50500C09EB4 /* FaceNote */,
 				C8C0425A2C8B5A0500A22224 /* HotProspects */,
 				C85420372C8DAD6A00208176 /* Flashzilla */,
+				C85420582C91FB2100208176 /* LayoutAndGeometry */,
 				C82DB1DC2C5ADC1B0014923E /* Products */,
 			);
 			sourceTree = "<group>";
@@ -564,6 +581,7 @@
 				C8B5C0962C88D50500C09EB4 /* FaceNote.app */,
 				C8C042592C8B5A0500A22224 /* HotProspects.app */,
 				C85420362C8DAD6A00208176 /* Flashzilla.app */,
+				C85420572C91FB2000208176 /* LayoutAndGeometry.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -840,6 +858,25 @@
 			isa = PBXGroup;
 			children = (
 				C854203F2C8DAD6D00208176 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		C85420582C91FB2100208176 /* LayoutAndGeometry */ = {
+			isa = PBXGroup;
+			children = (
+				C85420592C91FB2100208176 /* LayoutAndGeometryApp.swift */,
+				C854205B2C91FB2100208176 /* ContentView.swift */,
+				C854205D2C91FB2400208176 /* Assets.xcassets */,
+				C854205F2C91FB2400208176 /* Preview Content */,
+			);
+			path = LayoutAndGeometry;
+			sourceTree = "<group>";
+		};
+		C854205F2C91FB2400208176 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				C85420602C91FB2400208176 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
 			sourceTree = "<group>";
@@ -1393,6 +1430,23 @@
 			productReference = C85420362C8DAD6A00208176 /* Flashzilla.app */;
 			productType = "com.apple.product-type.application";
 		};
+		C85420562C91FB2000208176 /* LayoutAndGeometry */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C85420642C91FB2400208176 /* Build configuration list for PBXNativeTarget "LayoutAndGeometry" */;
+			buildPhases = (
+				C85420532C91FB2000208176 /* Sources */,
+				C85420542C91FB2000208176 /* Frameworks */,
+				C85420552C91FB2000208176 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = LayoutAndGeometry;
+			productName = LayoutAndGeometry;
+			productReference = C85420572C91FB2000208176 /* LayoutAndGeometry.app */;
+			productType = "com.apple.product-type.application";
+		};
 		C8964C762C626A2500024577 /* MultiplicationTables */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = C8964C842C626A2A00024577 /* Build configuration list for PBXNativeTarget "MultiplicationTables" */;
@@ -1629,6 +1683,9 @@
 					C85420352C8DAD6A00208176 = {
 						CreatedOnToolsVersion = 15.2;
 					};
+					C85420562C91FB2000208176 = {
+						CreatedOnToolsVersion = 15.2;
+					};
 					C8964C762C626A2500024577 = {
 						CreatedOnToolsVersion = 15.2;
 					};
@@ -1703,6 +1760,7 @@
 				C8B5C0952C88D50500C09EB4 /* FaceNote */,
 				C8C042582C8B5A0500A22224 /* HotProspects */,
 				C85420352C8DAD6A00208176 /* Flashzilla */,
+				C85420562C91FB2000208176 /* LayoutAndGeometry */,
 			);
 		};
 /* End PBXProject section */
@@ -1814,6 +1872,15 @@
 			files = (
 				C85420402C8DAD6D00208176 /* Preview Assets.xcassets in Resources */,
 				C854203D2C8DAD6D00208176 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C85420552C91FB2000208176 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C85420612C91FB2400208176 /* Preview Assets.xcassets in Resources */,
+				C854205E2C91FB2400208176 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -2033,14 +2100,23 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-                C85420522C90EC3800208176 /* CardDataProvider.swift in Sources */,
-                C85420492C8DB05C00208176 /* View+Extensions.swift in Sources */,
+				C85420522C90EC3800208176 /* CardDataProvider.swift in Sources */,
+				C85420492C8DB05C00208176 /* View+Extensions.swift in Sources */,
 				C854203B2C8DAD6A00208176 /* ContentView.swift in Sources */,
 				C85420452C8DADD200208176 /* Card.swift in Sources */,
 				C854204B2C8E51FB00208176 /* EditCards.swift in Sources */,
 				C85420472C8DAE4900208176 /* CardView.swift in Sources */,
 				C85420502C8F9DAF00208176 /* DynamicBackground.swift in Sources */,
 				C85420392C8DAD6A00208176 /* FlashzillaApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C85420532C91FB2000208176 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C854205C2C91FB2100208176 /* ContentView.swift in Sources */,
+				C854205A2C91FB2100208176 /* LayoutAndGeometryApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -3061,6 +3137,69 @@
 			};
 			name = Release;
 		};
+		C85420622C91FB2400208176 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"LayoutAndGeometry/Preview Content\"";
+				DEVELOPMENT_TEAM = NUA29C2B66;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.olahmate.LayoutAndGeometry;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		C85420632C91FB2400208176 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"LayoutAndGeometry/Preview Content\"";
+				DEVELOPMENT_TEAM = NUA29C2B66;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.olahmate.LayoutAndGeometry;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
 		C8964C822C626A2A00024577 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -3880,6 +4019,15 @@
 			buildConfigurations = (
 				C85420412C8DAD6D00208176 /* Debug */,
 				C85420422C8DAD6D00208176 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C85420642C91FB2400208176 /* Build configuration list for PBXNativeTarget "LayoutAndGeometry" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C85420622C91FB2400208176 /* Debug */,
+				C85420632C91FB2400208176 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
