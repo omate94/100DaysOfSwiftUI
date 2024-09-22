@@ -41,6 +41,13 @@
 		C82DB2A22C615CA30014923E /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C82DB2A12C615CA30014923E /* ContentView.swift */; };
 		C82DB2A42C615CA60014923E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C82DB2A32C615CA60014923E /* Assets.xcassets */; };
 		C82DB2A72C615CA60014923E /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C82DB2A62C615CA60014923E /* Preview Assets.xcassets */; };
+		C83441952C9C773300A8E4BC /* RollTheDiceApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C83441942C9C773300A8E4BC /* RollTheDiceApp.swift */; };
+		C83441972C9C773300A8E4BC /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C83441962C9C773300A8E4BC /* ContentView.swift */; };
+		C83441992C9C773500A8E4BC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C83441982C9C773500A8E4BC /* Assets.xcassets */; };
+		C834419C2C9C773500A8E4BC /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C834419B2C9C773500A8E4BC /* Preview Assets.xcassets */; };
+		C83441A12CA0BDD400A8E4BC /* RollResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = C83441A02CA0BDD400A8E4BC /* RollResult.swift */; };
+		C83441A32CA0BFC700A8E4BC /* DiceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C83441A22CA0BFC700A8E4BC /* DiceView.swift */; };
+		C83441A52CA0BFD500A8E4BC /* HistoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C83441A42CA0BFD500A8E4BC /* HistoryView.swift */; };
 		C849BBF92C68F99500B2641E /* GridLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = C849BBF82C68F99500B2641E /* GridLayout.swift */; };
 		C849BBFB2C68FF4300B2641E /* ListLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = C849BBFA2C68FF4300B2641E /* ListLayout.swift */; };
 		C849BC162C692A1300B2641E /* NavigationApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C849BC152C692A1300B2641E /* NavigationApp.swift */; };
@@ -210,6 +217,14 @@
 		C82DB2A12C615CA30014923E /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		C82DB2A32C615CA60014923E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C82DB2A62C615CA60014923E /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		C83441922C9C773300A8E4BC /* RollTheDice.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RollTheDice.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		C83441942C9C773300A8E4BC /* RollTheDiceApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RollTheDiceApp.swift; sourceTree = "<group>"; };
+		C83441962C9C773300A8E4BC /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		C83441982C9C773500A8E4BC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		C834419B2C9C773500A8E4BC /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		C83441A02CA0BDD400A8E4BC /* RollResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RollResult.swift; sourceTree = "<group>"; };
+		C83441A22CA0BFC700A8E4BC /* DiceView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiceView.swift; sourceTree = "<group>"; };
+		C83441A42CA0BFD500A8E4BC /* HistoryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryView.swift; sourceTree = "<group>"; };
 		C849BBF82C68F99500B2641E /* GridLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GridLayout.swift; sourceTree = "<group>"; };
 		C849BBFA2C68FF4300B2641E /* ListLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListLayout.swift; sourceTree = "<group>"; };
 		C849BC132C692A1200B2641E /* Navigation.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Navigation.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -408,6 +423,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		C834418F2C9C773300A8E4BC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		C849BC102C692A1200B2641E /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -551,6 +573,7 @@
 				C8C0425A2C8B5A0500A22224 /* HotProspects */,
 				C85420372C8DAD6A00208176 /* Flashzilla */,
 				C85420582C91FB2100208176 /* LayoutAndGeometry */,
+				C83441932C9C773300A8E4BC /* RollTheDice */,
 				C82DB1DC2C5ADC1B0014923E /* Products */,
 			);
 			sourceTree = "<group>";
@@ -582,6 +605,7 @@
 				C8C042592C8B5A0500A22224 /* HotProspects.app */,
 				C85420362C8DAD6A00208176 /* Flashzilla.app */,
 				C85420572C91FB2000208176 /* LayoutAndGeometry.app */,
+				C83441922C9C773300A8E4BC /* RollTheDice.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -736,6 +760,28 @@
 			isa = PBXGroup;
 			children = (
 				C82DB2A62C615CA60014923E /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		C83441932C9C773300A8E4BC /* RollTheDice */ = {
+			isa = PBXGroup;
+			children = (
+				C83441942C9C773300A8E4BC /* RollTheDiceApp.swift */,
+				C83441962C9C773300A8E4BC /* ContentView.swift */,
+				C83441982C9C773500A8E4BC /* Assets.xcassets */,
+				C834419A2C9C773500A8E4BC /* Preview Content */,
+				C83441A02CA0BDD400A8E4BC /* RollResult.swift */,
+				C83441A22CA0BFC700A8E4BC /* DiceView.swift */,
+				C83441A42CA0BFD500A8E4BC /* HistoryView.swift */,
+			);
+			path = RollTheDice;
+			sourceTree = "<group>";
+		};
+		C834419A2C9C773500A8E4BC /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				C834419B2C9C773500A8E4BC /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
 			sourceTree = "<group>";
@@ -1362,6 +1408,23 @@
 			productReference = C82DB29D2C615CA20014923E /* Animations.app */;
 			productType = "com.apple.product-type.application";
 		};
+		C83441912C9C773300A8E4BC /* RollTheDice */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C834419F2C9C773500A8E4BC /* Build configuration list for PBXNativeTarget "RollTheDice" */;
+			buildPhases = (
+				C834418E2C9C773300A8E4BC /* Sources */,
+				C834418F2C9C773300A8E4BC /* Frameworks */,
+				C83441902C9C773300A8E4BC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = RollTheDice;
+			productName = RollTheDice;
+			productReference = C83441922C9C773300A8E4BC /* RollTheDice.app */;
+			productType = "com.apple.product-type.application";
+		};
 		C849BC122C692A1200B2641E /* Navigation */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = C849BC1E2C692A1500B2641E /* Build configuration list for PBXNativeTarget "Navigation" */;
@@ -1671,6 +1734,9 @@
 					C82DB29C2C615CA20014923E = {
 						CreatedOnToolsVersion = 15.2;
 					};
+					C83441912C9C773300A8E4BC = {
+						CreatedOnToolsVersion = 15.2;
+					};
 					C849BC122C692A1200B2641E = {
 						CreatedOnToolsVersion = 15.2;
 					};
@@ -1761,6 +1827,7 @@
 				C8C042582C8B5A0500A22224 /* HotProspects */,
 				C85420352C8DAD6A00208176 /* Flashzilla */,
 				C85420562C91FB2000208176 /* LayoutAndGeometry */,
+				C83441912C9C773300A8E4BC /* RollTheDice */,
 			);
 		};
 /* End PBXProject section */
@@ -1836,6 +1903,15 @@
 			files = (
 				C82DB2A72C615CA60014923E /* Preview Assets.xcassets in Resources */,
 				C82DB2A42C615CA60014923E /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C83441902C9C773300A8E4BC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C834419C2C9C773500A8E4BC /* Preview Assets.xcassets in Resources */,
+				C83441992C9C773500A8E4BC /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -2058,6 +2134,18 @@
 			files = (
 				C82DB2A22C615CA30014923E /* ContentView.swift in Sources */,
 				C82DB2A02C615CA30014923E /* AnimationsApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C834418E2C9C773300A8E4BC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C83441972C9C773300A8E4BC /* ContentView.swift in Sources */,
+				C83441A12CA0BDD400A8E4BC /* RollResult.swift in Sources */,
+				C83441A52CA0BFD500A8E4BC /* HistoryView.swift in Sources */,
+				C83441A32CA0BFC700A8E4BC /* DiceView.swift in Sources */,
+				C83441952C9C773300A8E4BC /* RollTheDiceApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -2878,6 +2966,69 @@
 				);
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.olahmate.Animations;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		C834419D2C9C773500A8E4BC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"RollTheDice/Preview Content\"";
+				DEVELOPMENT_TEAM = NUA29C2B66;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.olahmate.RollTheDice;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		C834419E2C9C773500A8E4BC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"RollTheDice/Preview Content\"";
+				DEVELOPMENT_TEAM = NUA29C2B66;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.olahmate.RollTheDice;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = iphoneos;
 				SWIFT_EMIT_LOC_STRINGS = YES;
@@ -3983,6 +4134,15 @@
 			buildConfigurations = (
 				C82DB2A82C615CA60014923E /* Debug */,
 				C82DB2A92C615CA60014923E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C834419F2C9C773500A8E4BC /* Build configuration list for PBXNativeTarget "RollTheDice" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C834419D2C9C773500A8E4BC /* Debug */,
+				C834419E2C9C773500A8E4BC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
