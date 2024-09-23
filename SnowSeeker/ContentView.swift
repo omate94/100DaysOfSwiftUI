@@ -8,8 +8,16 @@
 import SwiftUI
 
 struct ContentView: View {
+    private enum Order {
+        case `default`
+        case country
+        case alphabetical
+        
+    }
+    
     @State private var searchText = ""
     @State private var favorites = Favorites()
+    @State private var order: Order = .default
     
     private let resorts: [Resort] = Bundle.main.decode("resorts.json")
     private var filteredResorts: [Resort] {
@@ -20,9 +28,24 @@ struct ContentView: View {
         }
     }
     
+    private var sortedResorts: [Resort] {
+        switch order {
+        case .default:
+            filteredResorts
+        case .country:
+            filteredResorts.sorted {
+                $0.country < $1.country
+            }
+        case .alphabetical:
+            filteredResorts.sorted {
+                $0.name < $1.name
+            }
+        }
+    }
+    
     var body: some View {
         NavigationSplitView {
-            List(filteredResorts) { resort in
+            List(sortedResorts) { resort in
                 NavigationLink(value: resort) {
                     HStack {
                         Image(resort.country)
@@ -58,6 +81,18 @@ struct ContentView: View {
                 ResortView(resort: resort)
             }
             .searchable(text: $searchText, prompt: "Search for a resort")
+            .toolbar {
+                Menu("Order", systemImage: "arrow.up.arrow.down") {
+                    Picker("Order", selection: $order) {
+                        Text("Default")
+                            .tag(Order.default)
+                        Text("Country")
+                            .tag(Order.country)
+                        Text("Alphabetical")
+                            .tag(Order.alphabetical)
+                    }
+                }
+            }
         } detail: {
             WelcomeView()
         }

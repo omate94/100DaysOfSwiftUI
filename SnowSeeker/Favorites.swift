@@ -13,9 +13,11 @@ class Favorites {
     private let key = "Favorites"
 
     init() {
-        // load our saved data
-
-        resorts = []
+        if let storedResorts = UserDefaults.standard.stringArray(forKey: key) {
+            resorts = Set(storedResorts)
+        } else {
+            resorts = []
+        }
     }
 
     func contains(_ resort: Resort) -> Bool {
@@ -33,6 +35,6 @@ class Favorites {
     }
 
     func save() {
-        // write out our data
+        UserDefaults.standard.set(Array(resorts), forKey: key)
     }
 }
